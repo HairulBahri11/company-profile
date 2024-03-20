@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter Tight", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+nav {
+  position: absolute;
+  z-index: 99;
+}
+
+/* matikan scroll ke kanan dan ke kiri */
+
+body {
+  padding-top: 60px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.img-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.nav-item a:hover {
+  color: rgb(239, 239, 245);
+  border-bottom: 1px solid rgb(239, 239, 245);
+}
+
+.cv {
+  padding: 5px;
+  position: absolute;
+  top: 27%;
+  left: 5%;
+  color: rgb(41, 41, 148);
+  font-weight: bolder;
+  font-size: 24px;
+
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.description {
+  font-family: "Madimi One", sans-serif;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  color: white;
+  font-weight: bolder;
+  font-size: 50px;
+  width: 50%;
+  line-height: 120%;
+  text-shadow: -4px -4px 0 rgb(41, 41, 148), 4px -4px 0 rgb(41, 41, 148),
+    -4px 4px 0 rgb(41, 41, 148), 4px 4px 0 rgb(41, 41, 148);
+}
+
+.callme {
+  text-decoration: none;
+  list-style: none;
+  background-color: rgb(41, 41, 148);
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+}
+
+.callme:hover {
+  background-color: white;
+  color: rgb(41, 41, 148);
+}
+
+.bpom-logo {
+  position: absolute;
+  top: 70%;
+  left: 90%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.bpom-img {
+  width: 80%;
+}
+
+#WhyChooseUs {
+  margin-top: 20px;
+}
+
+.card {
+  height: 350px;
+  border-radius: 10px;
+  border: 2px solid #cdcdcd;
+}
+
+.card-text {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.banner-produk {
+  width: 100%;
+  height: 70vh;
+}
+
+#banner-produk {
+  position: relative;
+}
+
+.produk {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  border: 10px solid rgb(245, 245, 248);
+  box-shadow: #333 5px 5px 5px;
+  border-radius: 20px;
+}
+
+.produk_dua {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  border: 10px solid rgb(245, 245, 247);
+  box-shadow: #333 5px 5px 5px;
+  border-radius: 20px;
+}
+#our-achieve {
+  padding: 10px;
+}
+
+.bungkus {
+  padding: 10px;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  background-color: #cdcdcd;
+}
+.accordion-button {
+  background-color: rgb(41, 41, 148);
+  color: white;
+}
+
+.produk-card {
+  background-color: rgb(41, 41, 148);
+}
+
+.produk-card p {
+  font-family: "Madimi One", sans-serif;
+  padding: 15px;
+  color: white;
+  font-size: 21px;
+  font-weight: bolder;
+}
+
+.fa-circle-check {
+  color: rgb(41, 41, 148);
+}
+
+#map h5,
+#map label {
+  color: white;
+}
+
+.produk-data:hover {
+  /* zoom in and out */
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.fa-circle-check:hover {
+  color: rgb(41, 135, 148);
+  transform: scale3d(1.3, 1.3, 1.3);
+  transition: all;
+}
+
+.listnya {
+  padding: 10px;
+  border-bottom: 1px solid rgb(188, 188, 211);
+}
+
+.footer-title {
+  color: white;
+  background-color: rgb(41, 41, 148);
+  padding: 15px;
+  z-index: 99;
+}
+
+.data-produk {
+  font-size: 25px;
+  color: rgb(41, 41, 148);
+  font-family: "Madimi One", sans-serif;
+}
+
+.data-produk:hover {
+  color: rgb(41, 135, 148);
+  transform: scale(1.2);
+  transition: all;
+}
+
+.cv-text {
+  color: rgb(41, 41, 148);
+  font-size: 21px;
+}
+
+.title-produk {
+  color: rgb(41, 41, 148);
+  font-size: 29px;
+  font-family: "Madimi One", sans-serif;
+  text-decoration: underline;
+}
+
+.tentang-kami {
+  color: rgb(41, 41, 148);
+  font-family: "Madimi One", sans-serif;
+  position: absolute;
+  /* saya ingin mengatur posisi ditengah */
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.tentang-kami p {
+  width: 100%;
+
+  font-family: "Madimi One", sans-serif;
+  color: white;
+  font-weight: bolder;
+  font-size: 80px;
+  text-shadow: -4px -4px 0 rgb(41, 41, 148), 4px -4px 0 rgb(41, 41, 148),
+    -4px 4px 0 rgb(41, 41, 148), 4px 4px 0 rgb(41, 41, 148);
+}
+
+.img-hero-fixed {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.tentang-kami-perusahaan {
+  text-align: justify;
+}
+
+.visi-misi {
+  background-color: rgb(41, 41, 148);
+  color: white;
+  margin-top: 50px;
+}
+
+.visi-misi-text {
+  font-size: 36px;
+}
+
+.visi-misi .row {
+  padding: 50px;
+}
+
+.visi-deskripsi,
+.misi-deskripsi {
+  text-align: justify;
+}
+
+.company {
+  font-size: 45px;
+}
+
+.sm {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 5%;
+  font-style: italic;
+}
+.sosialmedia {
+  width: 40px;
+}
+
+.labelnya {
+  color: rgb(41, 41, 148);
+  font-size: 21px;
+}
+
+@media screen and (max-width: 768px) {
+  .cv {
+    top: 30%;
+  }
+  .description {
+    top: 38%;
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .tentang-kami p {
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+  }
+
+  .callme {
+    top: 79%;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  .produk_dua {
+    top: 50%;
+    left: 25%;
+  }
+
+  .produk {
+    top: 40%;
+    left: 5%;
+  }
+}

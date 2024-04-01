@@ -410,7 +410,9 @@
                     placeholder="Tulis pertanyaan Anda di sini"
                   ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Kirim</button>
+                <button type="submit" class="btn btn-primary" id="kirim">
+                  Kirim
+                </button>
               </form>
             </div>
             <div class="col-md-6">
@@ -442,5 +444,44 @@
   ></script>
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    // Get the submit button
+    const submitButton = document.getElementById("kirim");
+
+    // Add an event listener to the submit button
+    submitButton.addEventListener("click", function (event) {
+      // Prevent the form from submitting normally
+      event.preventDefault();
+
+      // Get the form elements
+      const nama = document.getElementById("nama").value;
+      const email = document.getElementById("email").value;
+      const pertanyaan = document.getElementById("pertanyaan").value;
+
+      // // Get the values of the form elements
+      // const namaValue = nama.value;
+      // const emailValue = email.value;
+      // const pertanyaanValue = pertanyaan.value;
+
+      // // Display the values in an wa chat
+      // // Create a URL with the form data as parameters
+      // const url = `https://wa.me/085847406716?text=Nama:%20${namaValue}%0AEmail:%20${emailValue}%0APertanyaan:%20${pertanyaanValue}`;
+      const message = `Perkenalkan saya ${nama}!
+
+      Email : ${email}
+
+    Pertanyaan: ${pertanyaan}
+
+    !!Terima kasih telah menghubungi kami.`;
+
+      // Create a wa.me URL with the formatted message as a parameter
+      const url = `https://wa.me/082345434543?text=${encodeURIComponent(
+        message
+      )}`;
+
+      window.open(url);
+    });
   </script>
 </html>

@@ -69,8 +69,8 @@ body {
   color: white;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 10px;
   position: absolute;
   top: 65%;
@@ -293,7 +293,53 @@ body {
   font-size: 21px;
 }
 
+.box-bg {
+  position: relative;
+}
+
+.bgnya {
+  background-image: url(img/close-up-milk-from-goats.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  /* opacity black */
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+.konten-bg {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.callme2 {
+  text-decoration: none;
+  list-style: none;
+  background-color: rgb(41, 41, 148);
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.tes {
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
+  nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   body {
     overflow-x: hidden;
   }

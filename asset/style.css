@@ -82,16 +82,25 @@ body {
   color: rgb(41, 41, 148);
 }
 
-.bpom-logo {
+.bpom-img {
   position: absolute;
-  top: 70%;
-  left: 90%;
-  background-color: white;
-  border-radius: 10px;
+  top: 75%;
+  right: 17%;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 100px;
 }
 
-.bpom-img {
-  width: 80%;
+.hand-img {
+  position: absolute;
+  top: 75%;
+  right: 5%;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 100px;
+  padding: 10px;
 }
 
 #WhyChooseUs {
@@ -111,7 +120,7 @@ body {
 
 .banner-produk {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
 }
 
 #banner-produk {
@@ -335,6 +344,36 @@ body {
   width: 100%;
 }
 
+.brand-bottom {
+  position: absolute;
+  bottom: 2%;
+  left: 6%;
+  color: white;
+  font-size: 20px;
+}
+
+.buat-brandmu {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: rgb(41, 41, 148);
+  padding: 10px;
+  font-size: 34px;
+}
+
+.callme-fixed-whatsapp {
+  position: fixed;
+  bottom: 5%;
+  right: 4%;
+  z-index: 1;
+  background-color: rgb(121, 121, 177);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 768px) {
   nav {
     padding-left: 60px;
@@ -374,5 +413,16 @@ body {
   .produk {
     top: 40%;
     left: 5%;
+  }
+
+  .bpom-img {
+    top: 90%;
+    width: 50px;
+    height: 50px;
+  }
+  .hand-img {
+    top: 90%;
+    width: 50px;
+    height: 50px;
   }
 }

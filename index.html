@@ -84,8 +84,12 @@
         target="_blank"
         data-aos="fade-up"
         data-aos-duration="1400"
-        ><i class="fab fa-whatsapp"></i
+        ><i class="fab fa-whatsapp" style="font-size: 50px"></i
       ></a>
+
+      <a id="scrollToTopButton" class="up-fixed-whatsapp" href="#hero">
+        <i class="fa-solid fa-arrow-up" style="font-size: 20px"></i>
+      </a>
     </section>
 
     <section id="hero">
@@ -115,7 +119,7 @@
         <div class="bpom-logo">
           <img
             class="bpom-img"
-            src="asset/img/Badan POM.png"
+            src="asset/img/logo-bpom-630x380.jpg"
             alt="bpom-logo"
             data-aos="fade-down"
             data-aos-duration="1600"
@@ -229,7 +233,7 @@
       <div class="bpom-logo">
         <img
           class="bpom-img"
-          src="asset/img/Badan POM.png"
+          src="asset/img/logo-bpom-630x380.jpg"
           alt="bpom-logo"
           data-aos="fade-down"
           data-aos-duration="1600"
@@ -507,6 +511,17 @@
       )}`;
 
       window.open(url);
+    });
+
+    // cek apabila up-fixed-whatapp hanya muncul ketika scrol kebawah
+    window.addEventListener("scroll", function () {
+      var scrollToTopButton = document.getElementById("scrollToTopButton");
+      if (window.pageYOffset > 500) {
+        // Jika telah di-scroll lebih dari 100px dari atas
+        scrollToTopButton.style.display = "block"; // Tampilkan ikon
+      } else {
+        scrollToTopButton.style.display = "none"; // Sembunyikan ikon
+      }
     });
   </script>
 </html>

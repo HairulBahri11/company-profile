@@ -84,7 +84,7 @@ body {
 
 .bpom-img {
   position: absolute;
-  top: 75%;
+  bottom: 10px;
   right: 17%;
   width: 150px;
   height: 150px;
@@ -94,7 +94,7 @@ body {
 
 .hand-img {
   position: absolute;
-  top: 75%;
+  bottom: 10px;
   right: 5%;
   width: 150px;
   height: 150px;
@@ -346,10 +346,11 @@ body {
 
 .brand-bottom {
   position: absolute;
-  bottom: 2%;
+  bottom: 0%;
   left: 6%;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .buat-brandmu {
@@ -361,17 +362,35 @@ body {
   color: rgb(41, 41, 148);
   padding: 10px;
   font-size: 34px;
+  font-weight: bold;
 }
 
 .callme-fixed-whatsapp {
   position: fixed;
-  bottom: 5%;
-  right: 4%;
+  bottom: 2%;
+  right: 1%;
   z-index: 1;
-  background-color: rgb(121, 121, 177);
+  background-color: rgb(26, 168, 13);
   color: white;
   padding: 20px;
   border-radius: 10px;
+  z-index: 99;
+}
+.up-fixed-whatsapp {
+  position: fixed;
+  bottom: 17%;
+  right: 2%;
+  z-index: 1;
+  background-color: rgb(152, 160, 151);
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.bpom-logo {
+  background-color: #fff;
+  border-radius: 100px;
 }
 
 @media screen and (max-width: 768px) {

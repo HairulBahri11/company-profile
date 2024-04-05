@@ -353,16 +353,33 @@ body {
   font-weight: bold;
 }
 
-.buat-brandmu {
+/* .buat-brandmu {
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 0%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   color: rgb(41, 41, 148);
   padding: 10px;
   font-size: 34px;
   font-weight: bold;
+  width: 50%;
+  text-align: center;
+} */
+
+.buat-brandmu {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: rgb(41, 41, 148);
+  padding: 10px;
+  font-size: 34px;
+  font-weight: bold;
+  width: fit-content; /* Mengatur lebar konten sesuai kebutuhan */
+  width: 50%; /* Batasan lebar konten */
+  text-align: center; /* Mengatur teks agar menjadi pusat secara horizontal */
 }
 
 .callme-fixed-whatsapp {
@@ -383,7 +400,7 @@ body {
   z-index: 1;
   background-color: rgb(152, 160, 151);
   color: white;
-  padding: 14px;
+  padding: 10px;
   border-radius: 10px;
   transition: opacity 0.3s ease;
 }
@@ -394,6 +411,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   nav {
     padding-left: 60px;
     padding-right: 60px;
@@ -443,5 +463,9 @@ body {
     top: 90%;
     width: 50px;
     height: 50px;
+  }
+
+  .buat-brandmu {
+    width: 100%;
   }
 }

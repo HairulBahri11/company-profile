@@ -72,6 +72,20 @@
       </div>
     </nav>
     <section>
+      <a
+        class="callme-fixed-whatsapp"
+        href="https://wa.me/628133100000"
+        target="_blank"
+        data-aos="fade-up"
+        data-aos-duration="1400"
+        ><i class="fab fa-whatsapp" style="font-size: 50px"></i
+      ></a>
+
+      <a id="scrollToTopButton" class="up-fixed-whatsapp" href="#hero">
+        <i class="fa-solid fa-arrow-up" style="font-size: 15px"></i>
+      </a>
+    </section>
+    <section>
       <div class="">
         <img
           class="img-hero-fixed"
@@ -167,5 +181,17 @@
   ></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    // cek apabila up-fixed-whatapp hanya muncul ketika scrol kebawah
+    window.addEventListener("scroll", function () {
+      var scrollToTopButton = document.getElementById("scrollToTopButton");
+      if (window.pageYOffset > 500) {
+        // Jika telah di-scroll lebih dari 100px dari atas
+        scrollToTopButton.style.display = "block"; // Tampilkan ikon
+      } else {
+        scrollToTopButton.style.display = "none"; // Sembunyikan ikon
+      }
+    });
   </script>
 </html>

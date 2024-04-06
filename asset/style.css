@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Inter Tight", sans-serif;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
   font-size: 18px;
 }
 
@@ -15,12 +13,38 @@
 /* matikan scroll ke kanan dan ke kiri */
 
 body {
-  padding-top: 60px;
+  overflow-x: hidden;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
-  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+.hero-image {
+  background-image: url("img/close-up-milk-from-goats.jpg"); /* Replace the URL with your actual image */
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-text {
+  text-align: center;
+  padding-top: 200px; /* Adjust as per your requirement */
+  color: white;
+}
+
+.img-bg-hero {
+  position: relative;
+  background-image: url(img/close-up-milk-from-goats.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 .img-hero {
@@ -85,9 +109,19 @@ body {
 .bpom-img {
   position: absolute;
   bottom: 10px;
-  right: 17%;
-  width: 150px;
-  height: 150px;
+  right: 20%;
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.halal-img {
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
+  width: 120px;
+  height: 120px;
   background-color: #fff;
   border-radius: 100px;
 }
@@ -95,9 +129,9 @@ body {
 .hand-img {
   position: absolute;
   bottom: 10px;
-  right: 5%;
-  width: 150px;
-  height: 150px;
+  right: 30%;
+  width: 120px;
+  height: 120px;
   background-color: #fff;
   border-radius: 100px;
   padding: 10px;
@@ -331,7 +365,7 @@ body {
 .callme2 {
   text-decoration: none;
   list-style: none;
-  background-color: rgb(41, 41, 148);
+  background-color: #03fd03;
   color: white;
   padding-left: 50px;
   padding-right: 50px;
@@ -411,16 +445,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  nav {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  body {
-    overflow-x: hidden;
-  }
   .cv {
     top: 30%;
   }
@@ -465,7 +489,18 @@ body {
     height: 50px;
   }
 
+  .halal-img {
+    top: 90%;
+    width: 50px;
+    height: 50px;
+  }
+
   .buat-brandmu {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text {
+    padding-top: 100px;
   }
 }

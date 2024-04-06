@@ -30,7 +30,6 @@
   width: 125px;
   height: 125px;
   object-fit: cover;
-  float: inline-end;
 
   margin: 10px;
 }
@@ -54,10 +53,6 @@
   line-height: 120%;
   text-shadow: -4px -4px 0 rgb(41, 41, 148), 4px -4px 0 rgb(41, 41, 148),
     -4px 4px 0 rgb(41, 41, 148), 4px 4px 0 rgb(41, 41, 148);
-}
-
-.box-callme {
-  margin-top: 5%;
 }
 
 .callme {
@@ -90,6 +85,32 @@
 /* CSS for responsiveness */
 @media (max-width: 768px) {
   .hero-text {
-    padding-top: 100px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .description {
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .box-img-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brand-bottom {
+    margin-top: 50px;
+    font-size: 25px;
   }
 }
